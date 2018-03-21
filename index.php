@@ -22,7 +22,7 @@
             Вариант 8
         </a>
     </div>
-    <a class="main__author" href="https://vk.com/family_cross">
+    <a class="main__author" href="https://vk.com/family_cross" target="_blank">
         FamilyCross
     </a>
 </div>
