@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="../css/2.css">
+</head>
+<body>
+
+<div>
+    <a href="../index.html">Назад</a>
+    <br><br><br>
+    <div>
+        2. Заданы три натуральных числа A, B, C, которые обозначают число, месяц и год. Найти порядковый номер даты,
+        начиная отсчет с начала года.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false;">
+            <label for="a">
+                Число A
+            </label>
+            <input type="number" min="1" max="31" id="a" name="a" required>
+            <br>
+            <label for="b">
+                Число B
+            </label>
+            <input type="number" min="1" max="12" id="b" name="b" required>
+            <br>
+            <label for="c">
+                Число C
+            </label>
+            <input type="number" min="0" id="c" name="c" required>
+            <br>
+            <input type="submit" value="Найти">
+        </form>
+        <br>
+        <div>
+            <div>
+                Сгенерированная дата: <span id="date">##.##.####</span>
+            </div>
+            <br>
+            <div>
+                С начала года <span id="count">прошло #</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/2.js"></script>
+<script src="../js/functions/formDate.js"></script>
+<script src="../js/functions/toStringCountDays.js"></script>
+</body>
+</html>

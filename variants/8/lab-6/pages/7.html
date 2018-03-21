@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 7</title>
+</head>
+<body>
+
+<a href="../index.html">Назад</a>
+<br><br><br>
+<div>
+    7. Разработайте форму, заполняемую пользователем Internet, на произвольную тематику. При этом должны быть
+    использованы все виды элементов, которые могут присутствовать на форме. Разработайте скрипт, проверяющий
+    правильность заполнения полей формы (не пустые ли они, соответствуют ли типы и диапазоны данных и др.)
+    При неправильном заполнении сообщить, какие поля надо исправить. Если всё заполнено верно, сообщить,
+    что данные отправлены.
+</div>
+<br><hr>
+<div>
+    <form method="get" onsubmit="solution(); return false;">
+        <h2>
+            Контактные данные
+        </h2>
+        <label for="surname" id="surname-label">Фамилия</label>
+        <input type="text" id="surname" name="surname" required>
+        <br><br>
+
+        <label for="name" id="name-label">Имя</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="patronymic" id="patronymic-label">Отчество</label>
+        <input type="text" id="patronymic" name="patronymic">
+        <br><br>
+
+        <label for="phone" id="phone-label">Телефон +7</label>
+        <input type="text" id="phone" name="phone" maxlength="13" placeholder="xxx-xxx-xx-xx" required
+               oninput="onchangePhone('phone')" data-length="0">
+        <br>
+
+        <h3>
+            Адрес доставки
+        </h3>
+        <label for="street" id="street-label">Улица</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="house" id="house-label">Дом</label>
+        <input type="number" id="house" name="house" min="1" required>
+
+        <label for="housing" id="housing-label">Корпус</label>
+        <input type="text" id="housing" name="housing" maxlength="3">
+
+        <label for="apartment" id="apartment-label">Квартира</label>
+        <input type="number" id="apartment" name="apartment" min="1">
+        <br>
+
+        <h2>
+            Детали заказа
+        </h2>
+        <label for="toy" id="toy-label">Выберите игрушку</label>
+        <select id="toy" name="toy" required>
+            <option value="default" selected>--выберите--</option>
+            <option value="car">Машинка</option>
+            <option value="doll">Кукла</option>
+            <option value="pyramid">Пирамидка</option>
+            <option value="plush-bear">Плюшевый мишка</option>
+            <option value="beanbag">Погремушка</option>
+            <option value="puzzle">Пазл</option>
+        </select>
+        <br><br>
+
+        <label for="count" id="count-label">Количество</label>
+        <input type="number" id="count" name="count" min="1" value="1" required>
+        <br><br>
+
+        <input type="submit" value="Отправить заказ">
+        <input type="reset" value="Очистить">
+    </form>
+</div>
+
+<script src="../js/7.js"></script>
+<script src="../js/functions/form/onchangePhone.js"></script>
+<script src="../js/functions/form/nameField.js"></script>
+</body>
+</html>

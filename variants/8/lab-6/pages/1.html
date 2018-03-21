@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="../css/1.css">
+</head>
+<body>
+
+<div>
+    <a href="../index.html">Назад</a>
+    <br><br><br>
+    <div>
+        1. Сколько соответствующих элементов двух последовательностей с одинаковым количеством элементов совпадают?
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false;">
+            <label for="data">
+                Введите количество членов последовательности:
+            </label>
+            <input type="number" min="1" id="data" name="data" required>
+            <input type="submit" value="Сгенерировать">
+        </form>
+        <br>
+        <div>
+            <div>
+                Последовательность №1
+            </div>
+            <div id="sequence_1">
+                -отсутствует-
+            </div>
+        </div>
+        <br>
+        <div>
+            <div>
+                Последовательность №2
+            </div>
+            <div id="sequence_2">
+                -отсутствует-
+            </div>
+        </div>
+        <br>
+        <div>
+            Количество совпадающих членов: <span id="count">#</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/1.js"></script>
+</body>
+</html>
