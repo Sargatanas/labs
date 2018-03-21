@@ -6,7 +6,7 @@ if (strripos($word, " ") !== false) {
     echo "То, что содержит пробелы, словом не считается! Попробуйте еще раз";
 } elseif ($word === "") {
     echo "Введите слово!";
-} elseif (preg_match("/^[a-zа-яё]{1}[a-zа-яё]*[a-zа-яё]{1}$/i", $word)) {
+} elseif (preg_match("/^([а-яА-ЯёЁa-zA-Z]+)$/u", $word)) {
     $words[] = mb_substr($word, 0, 1);
     $word = mb_substr($word, 1, mb_strlen($word) - 1);
     for (; $word !== ""; ) {
