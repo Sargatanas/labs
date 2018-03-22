@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 7</title>
+</head>
+<body>
+
+<div>
+    <div>
+        7. Разработайте форму, заполняемую пользователем Internet, на произвольную тематику. При этом должны быть
+        использованы все виды элементов, которые могут присутствовать на форме. Разработайте скрипт, проверяющий
+        правильность заполнения полей формы (не пустые ли они, соответствуют ли типы и диапазоны данных и др.)
+        При неправильном заполнении сообщить, какие поля надо исправить. Если всё заполнено верно, сообщить,
+        что данные отправлены.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false">
+            <label for="surname" id="surname-label">Фамилия*</label>
+            <input type="text" id="surname" required value="Fфф">
+            <br><br>
+
+            <label for="name" id="name-label">Имя</label>
+            <input type="text" id="name">
+            <br><br>
+
+            <label for="data">
+                Дата рождения
+            </label>
+            <input type="date" id="data">
+            <br><br>
+
+            <label for="email">
+                Электронная почта*
+            </label>
+            <input type="email" id="email" required value="a@a">
+            <br>
+
+            <h4>
+                Пол
+            </h4>
+            <input type="radio" name="sex" id="sex_m" value="male">
+            <label for="sex_m">
+                мужской
+            </label>
+            <br>
+            <input type="radio" name="sex" id="sex_w" value="female">
+            <label for="sex_w">
+                женский
+            </label>
+            <br><br>
+
+
+            <label for="city">
+                Город*
+            </label>
+            <select id="city" required>
+                <option value="none">
+                    --выберите город--
+                </option>
+                <option value="StPetersburg" id="StPetersburg">Санкт-Петербург</option>
+                <option value="Moscow" id="Moscow">Москва</option>
+                <option value="Perm" id="Perm">Пермь</option>
+                <option value="Yekaterinburg" id="Yekaterinburg">Екатеринбург</option>
+            </select>
+
+            <h3>
+                Проверка
+            </h3>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">
+                я не робот
+            </label>
+            <br><br>
+
+            <input type="submit" value="Отправить" id="submit">
+            <input type="reset" value="Очистить">
+        </form>
+    </div>
+</div>
+
+<script src="../js/7.js"></script>
+<script src="../js/functions/form/nameField.js"></script>
+</body>
+</html>

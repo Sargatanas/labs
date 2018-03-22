@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.task {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+
+    padding: 20px 50px;
+
+    background: white;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+
+    background: darkslategrey;
+
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.focus {
+    width: 100%;
+    height: calc(100vh - 140px);
+}

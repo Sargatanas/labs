@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+<body>
+
+<div>
+    <div>
+        2. Даны два натуральных числа <i>m</i> и <i>n</i> (<i>m</i> ≤ 9999, <i>n</i> ≤ 9999).
+        Проверить, есть ли в записи числа <i>m</i> цифры, одинаковые с цифрами в записи числа <i>n</i>.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false;">
+            <label for="m">
+                Введите число <i>m</i>:
+            </label>
+            <input type="number" min="1" max="9999" id="m" name="m" required>
+            <br><br>
+            <label for="n">
+                Введите число <i>n</i>:
+            </label>
+            <input type="number" min="1" max="9999" id="n" name="n" required>
+            <br><br>
+            <input type="submit" value="Отправить">
+        </form>
+        <br>
+        <div>
+            Вердикт: <span id="answer">#</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/2.js"></script>
+</body>
+</html>

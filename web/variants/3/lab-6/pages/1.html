@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="../css/1.css">
+</head>
+<body>
+
+<div>
+    <div>
+        1. Найти второй по величине элемент в последовательности.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false;">
+            <label for="length">
+                Введите длину последовательности:
+            </label>
+            <br><br>
+            <input type="number" min="1" id="length" name="length" required>
+            <input type="submit" value="Отправить">
+        </form>
+        <br>
+        <div>
+            <div>
+                Последовательность
+            </div>
+            <div id="sequence">
+                -отсутствует-
+            </div>
+        </div>
+        <br>
+        <div>
+            Второй по величине член последовательности: <span id="count">#</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/1.js"></script>
+</body>
+</html>
