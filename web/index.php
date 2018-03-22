@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Лабораторные работы</title>
 
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/web/css/style.css" rel="stylesheet">
 </head>
 <body class="body">
 
@@ -18,7 +18,7 @@
     </div>
     <hr class="main__hr">
     <div class="main-variants">
-        <a class="main-variants__element" href="/variants/8/index.html">
+        <a class="main-variants__element" href="/web/variants/8/index.html">
             Вариант 8
         </a>
     </div>
