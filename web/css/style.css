@@ -2,9 +2,9 @@
     font-family: 'Hattori Hanzo';
     src: local('Hattori Hanzo Light'),
          local('HattoriHanzo-Light'),
-         url('/web/resourcesrces/fonts/hattorihanzo/hattorihanzolight.woff2') format('woff2'),
-         url('/web/resourcesrces/fonts/hattorihanzo/hattorihanzolight.woff') format('woff'),
-         url('/web/resourcesrces/fonts/hattorihanzo/hattorihanzolight.ttf') format('truetype');
+         url('/resources/fonts/hattorihanzo/hattorihanzolight.woff2') format('woff2'),
+         url('/resources/fonts/hattorihanzo/hattorihanzolight.woff') format('woff'),
+         url('/resources/fonts/hattorihanzo/hattorihanzolight.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -12,9 +12,9 @@
     font-family: 'Hattori Hanzo';
     src: local('Hattori Hanzo Light Italic'),
          local('HattoriHanzo-LightItalic'),
-         url('/web/resourcesrces/fonts/hattorihanzo/hattorihanzolightitalic.woff2') format('woff2'),
-         url('/web/resourcesrces/fonts/hattorihanzo/hattorihanzolightitalic.woff') format('woff'),
-         url('/web/resourcesrces/fonts/hattorihanzo/hattorihanzolightitalic.ttf') format('truetype');
+         url('/resources/fonts/hattorihanzo/hattorihanzolightitalic.woff2') format('woff2'),
+         url('/resources/fonts/hattorihanzo/hattorihanzolightitalic.woff') format('woff'),
+         url('/resources/fonts/hattorihanzo/hattorihanzolightitalic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
@@ -31,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: url("/web/resourcesrces/img/background.png") no-repeat 50% 50% fixed,
+    background: url("/resources/img/background.png") no-repeat 50% 50% fixed,
                 linear-gradient(to bottom, #94514a, #59556d, #4d485c) fixed;
     background-size: auto 130%;
 }
@@ -70,7 +70,7 @@ body {
 
     margin: 60px 0 20px;
 
-    background: url("/web/resourcesrces/img/logo.png") no-repeat 50% 50%;
+    background: url("/resources/img/logo.png") no-repeat 50% 50%;
     background-size: contain;
 }
 
