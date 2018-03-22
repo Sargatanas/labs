@@ -1,4 +1,5 @@
 <?php
+echo '<a href="../4.html">Назад</a><br><br>';
 $language = (string)$_POST['language'];
 if ($language == "-сделайте выбор-") {
     echo "<div>Сделайте, пожалуйста, выбор</div>

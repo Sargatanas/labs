@@ -85,6 +85,16 @@ body {
     align-items: center;
     width: 100%;
 }
+.main-variants_inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 80%;
+
+    margin-top: -18px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
 
 .main-variants__element {
     display: flex;
@@ -116,6 +126,52 @@ body {
     margin-left: 3px;
     margin-bottom: 17px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.main-variants__element_default {
+    position: relative;
+    background: #b3877d;
+}
+.main-variants__element_default:hover {
+    background: #b3877d;
+}
+.main-variants__element_default:active {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.15);
+}
+.main-variants__element_default:after {
+    content: "";
+    position: absolute;
+    top: calc((100% - 10px) / 2);
+    right: 20px;
+
+    width: 0;
+    height: 0;
+
+    border: 10px solid rgba(255, 255, 255, 0);
+    border-top: 10px solid white;
+    border-bottom-width: 0;
+}
+.main-variants_inner > .main-variants__element {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 30%;
+
+    height: 35px;
+    max-width: 100%;
+
+    margin: 5px 3% 0 0;
+
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+
+    font-size: 18px;
+}
+.main-variants_inner > .main-variants__element:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .main__author {

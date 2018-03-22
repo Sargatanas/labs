@@ -1,4 +1,5 @@
 <?php
+echo '<a href="../6.html">Назад</a><br><br>';
 $word = (string)$_POST['word'];
 $word_copy = $word;
 

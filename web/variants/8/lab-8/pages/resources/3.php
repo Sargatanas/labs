@@ -1,4 +1,5 @@
 <?php
+echo '<a href="../3.html">Назад</a><br><br>';
 $string = (string)$_POST['string'];
 $color = (string)$_POST['color'];
 $color = mb_strtolower($color);
