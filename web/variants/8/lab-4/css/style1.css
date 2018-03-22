@@ -1,0 +1,42 @@
+h2 {
+    margin: 30px 0;
+    font-family: "Times New Roman", serif;
+    font-size: 40px;
+    color: #1b877e;
+}
+
+h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 30px;
+    text-decoration: overline dashed;
+    color: #58ada8;
+}
+
+.container {
+    width: 900px;
+    margin: 40px auto;
+    padding: 30px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: lower-alpha;
+}
+
+pre {
+    padding: 20px 10px 20px 40px;
+    background: #d3e3e6;
+}
+
+a:visited {
+    color: #58ada8;
+}
+
+p:hover {
+    color: #00a2af;
+}

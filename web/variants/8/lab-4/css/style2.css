@@ -1,0 +1,37 @@
+h2 {
+    margin: 30px 0;
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #803487;
+}
+
+h3 {
+    font-family: "Times New Roman", serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #ad5dad;
+}
+
+.container {
+    width: 700px;
+    margin: 40px auto;
+    padding: 30px 50px;
+    background: rgba(249, 249, 255, 0.8);
+    border-radius: 10px;
+}
+
+ul {
+    list-style: circle;
+}
+
+ol {
+    list-style: lower-greek;
+}
+
+a:visited {
+    color: #e24cbd;
+}
+
+p:hover {
+    color: #7c3baf;
+}
