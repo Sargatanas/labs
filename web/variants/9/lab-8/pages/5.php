@@ -8,7 +8,7 @@
             case 1: $one[] = $persons[$i-1];
                     break;
             case 2: $one[] = $persons[$i-1];
-                    $two[] = iconv('UTF-8', '', $persons[$i-1]);
+                    $two[] = $persons[$i-1];
                     break;
             case 0: $two[] = $persons[$i-1];
                     break;
