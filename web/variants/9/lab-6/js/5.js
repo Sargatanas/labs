@@ -8,7 +8,11 @@ document.getElementById('href').onmouseout = function () {
 
 document.getElementById('href').onclick = function () {
     var date = new Date();
-    alert('Уже уходите? Сейчас всего только ' + date.getHours() + ':' + date.getMinutes());
+    if (date().getMinutes() < 10) {
+        alert('Уже уходите? Сейчас всего только ' + date.getHours() + ':0' + date.getMinutes());
+    } else {
+        alert('Уже уходите? Сейчас всего только ' + date.getHours() + ':' + date.getMinutes());
+    }
 };
 
 function onUnload() {
