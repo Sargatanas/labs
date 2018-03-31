@@ -1,6 +1,6 @@
-Иванов
+Ivanov
 22
-Махайлов
-34
-Еленова
+Mikhailov
+36
+Elenova
 28

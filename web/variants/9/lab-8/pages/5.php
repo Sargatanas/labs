@@ -7,8 +7,8 @@
         switch ($i % 3) {
             case 1: $one[] = $persons[$i-1];
                     break;
-            case 2: $one[] = $persons[$i-1];
-                    $two[] = $persons[$i-1];
+            case 2: $two[] = $persons[$i-1];
+                    $one[] = $persons[$i-1];
                     break;
             case 0: $two[] = $persons[$i-1];
                     break;

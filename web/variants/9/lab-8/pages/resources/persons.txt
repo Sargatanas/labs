@@ -1,9 +1,9 @@
-﻿Иван
-Иванов
+﻿Ivan
+Ivanov
 22
-Михаил
-Махайлов
-34
-Елена
-Еленова
+Mikhail
+Mikhailov
+36
+Elena
+Elenova
 28

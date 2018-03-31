@@ -1,6 +1,6 @@
-﻿Иван
-Иванов
-Михаил
-Махайлов
-Елена
-Еленова
+﻿Ivan
+Ivanov
+Mikhail
+Mikhailov
+Elena
+Elenova
