@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background: url("../img/background2.jpg");
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 16px;
+    color: #2a8b83;
+}
+.block {
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px 50px;
+    background: white;
+}
+.hr1 {
+    border-top-style: solid;
+    border-top-color: white;
+    border-width: 100px 0 0 0;
+    border-image: url("../img/hr1.png") 200 repeat;
+    outline: none;
+}
+.hr2 {
+    border-top: 3px dashed #9beed6;
+}
+.font1 {
+    background: white;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 26px;
+}
+.font2 {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+.list {
+    margin-bottom: 50px;
+    list-style: none;
+}
+th {
+    background: #edf6ff;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/* ИЗМЕНЕНО */
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* свойства текста */
+.text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* свойства цвета и фона */
+.color {
+    background: radial-gradient(#e1faff 0%, #ffffff 80%);
+    color: black;
+}
+
+/* свойства шрифта */
+.font {
+    font-family: "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* свойства блоков */
+.block1 {
+    width: 560px;
+    height: 315px;
+    box-sizing: border-box;
+    margin: 20px calc((100% - 560px) / 2);
+}
+.block2 {
+    padding: 10px 40px;
+}
+
+/* списки */
+.order-list {
+    list-style-type: lower-greek;
+    list-style-position: outside;
+}
+.unorder-list {
+    list-style-image: url("../img/list.png");
+}
+
+/* псевдоклассы */
+a {
+    display: block;
+    width: 500px;
+
+    margin: 10px 0;
+    padding: 5px 10px;
+
+    background: #dff8fb;
+
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+
+    transition-duration: 0.1s;
+}
+a:hover {
+    background: #baeffb;
+}
+a:visited {
+    background: #e6edf0;
+    color: #828282;
+}

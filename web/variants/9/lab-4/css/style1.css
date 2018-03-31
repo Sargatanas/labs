@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    background: url("../img/background1.png");
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 14px;
+    color: darkgreen;
+}
+.block {
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+}
+.hr1 {
+    border-top-style: solid;
+    border-top-color: white;
+    border-width: 100px 0 0 0;
+    border-image: url("../img/hr1.png") 200 repeat;
+    outline: none;
+}
+.hr2 {
+    border-top: 3px dashed lightgreen;
+}
+.font1 {
+    background: white;
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 26px;
+}
+.font2 {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+}
+.list {
+    margin-bottom: 50px;
+    list-style: none;
+}
+th {
+    background: #e1ffe0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/* ИЗМЕНЕНО */
+/*--------------------------------------------------------------------------------------------------------------*/
+
+/* свойства текста */
+.text {
+    text-align: right;
+    text-decoration: overline;
+}
+
+/* свойства цвета и фона */
+.color {
+    background: radial-gradient(#f6ffa8 0%, #ffffff 80%);
+    color: black;
+}
+
+/* свойства шрифта */
+.font {
+    font-family: "Times New Roman", serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* свойства блоков */
+.block1 {
+    width: 560px;
+    height: 315px;
+    box-sizing: border-box;
+    margin: 20px calc((100% - 560px) / 2);
+}
+.block2 {
+    padding: 10px 20px;
+}
+
+/* списки */
+.order-list {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+.unorder-list {
+     list-style-image: url("../img/list.png");
+ }
+
+/* псевдоклассы */
+a {
+    display: block;
+    width: 500px;
+
+    margin: 10px 0;
+    padding: 5px 10px;
+
+    background: #e6fba9;
+
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+
+    transition-duration: 0.1s;
+}
+a:hover {
+    background: #b9fb52;
+}
+a:visited {
+    background: #dff1cf;
+    color: #828282;
+}

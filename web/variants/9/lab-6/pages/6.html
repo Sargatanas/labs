@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 6</title>
+</head>
+<body>
+
+<div>
+    <div>
+        6. Добавить к калькулятору следующие возможности.
+        <br><br>
+        Вычисление log<sub>a</sub>b.
+    </div>
+    <br><hr><br>
+    <!-- Работает по принципу "основание логарифма - log - подлогарифмическое выражение" -->
+    <div>
+        <form id="calc">
+            <table class="table">
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="monitor">
+                    </td>
+                    <td>
+                        <input type="button" id="fault" value="ON/C" onClick="plug()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b7" value="7" disabled onClick="digit(7)">
+                    </td>
+                    <td>
+                        <input type="button" id="b8" value="8" disabled onClick="digit(8)">
+                    </td>
+                    <td>
+                        <input type="button" id="b9" value="9" disabled onClick="digit(9)">
+                    </td>
+                    <td>
+                        <input type="button" id="div" value="/" disabled onClick="expr(1)">
+                    </td>
+                    <td>
+                        <input type="button" id="off" value="OFF" disabled onClick="shut()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b4" value="4" disabled onClick="digit(4)">
+                    </td>
+                    <td>
+                        <input type="button" id="b5" value="5" disabled onClick="digit(5)">
+                    </td>
+                    <td>
+                        <input type="button" id="b6" value="6" disabled onClick="digit(6)">
+                    </td>
+                    <td>
+                        <input type="button" id="mult" value="*" disabled onClick="expr(2)">
+                    </td>
+                    <td>
+                        <input type="button" id="sqr" value="^2" disabled onClick="square(1)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b1" value="1" disabled onClick="digit(1)">
+                    </td>
+                    <td>
+                        <input type="button" id="b2" value="2" disabled onClick="digit(2)">
+                    </td>
+                    <td>
+                        <input type="button" id="b3" value="3" disabled onClick="digit(3)">
+                    </td>
+                    <td>
+                        <input type="button" id="subt" value="-" disabled onClick="expr(3)">
+                    </td>
+                    <td>
+                        <input type="button" id="sqrt" value="&#8730;" disabled onClick="square(0)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="b0" value="0" disabled onclick="digit(0)">
+                    </td>
+                    <td>
+                        <input type="button" id="fix" value="." disabled onClick="digit('.')">
+                    </td>
+                    <td>
+                        <input type="button" id="res" value="=" disabled onClick="result()">
+                    </td>
+                    <td>
+                        <input type="button" id="add" value="+" disabled onClick="expr(4)">
+                    </td>
+                    <td id="rev">
+                        <input type="button" id="pow" value="log" disabled onClick="expr(5)">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<script src="../js/6.js"></script>
+</body>
+</html>

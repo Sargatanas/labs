@@ -24,6 +24,12 @@
         <a class="main-variants__element" href="/variants/8/index.html">
             Вариант 8
         </a>
+        <a class="main-variants__element" href="/variants/9/index.html">
+            Вариант 9
+        </a>
+        <a class="main-variants__element" href="/variants/10/index.html">
+            Вариант 10
+        </a>
     </div>
     <a class="main__author" href="https://vk.com/family_cross" target="_blank">
         FamilyCross

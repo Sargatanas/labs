@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+<body>
+
+<div>
+    <div>
+        2. Найти наибольшую и наименьшую цифры в записи данного натурального числа.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="post" onsubmit="solution(); return false;">
+            <label for="number">
+                Число:
+            </label>
+            <br><br>
+            <input type="number" min="1" id="number" name="number" required>
+            <br><br>
+            <input type="submit" name="submit" id="submit"
+                   value="Найти">
+        </form>
+        <br>
+        <div>
+            Наибольшая цифра: <span id="max">#</span>
+            <br><br>
+            Наименьшая цифра: <span id="min">#</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/2.js"></script>
+</body>
+</html>

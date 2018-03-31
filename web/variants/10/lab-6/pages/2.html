@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+<body>
+
+<div>
+    <div>
+        2. Произведение <i>n</i> первых нечетных чисел равно <i>p</i>. 
+        Сколько сомножителей взято? 
+        Если введенное число <i>n</i> не является указанным произведением, 
+        сообщить об этом.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false;">
+            <label for="p">
+                Введите <i>p</i>: 
+            </label>            
+            <br><br>
+            <input type="number" min="1" id="p" name="p" required>
+            <br><br>
+            <input type="submit" name="submit" id="submit" 
+                   value="Вычислить">
+        </form>
+        <br>
+        <div>
+            Результат: <span id="result">#</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/2.js"></script>
+</body>
+</html>
