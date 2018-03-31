@@ -6,6 +6,10 @@
 </head>
 <body>
 
+<a href="../..">Назад</a>
+
+<br><br>
+
 <div>
     6. Определить количество слов во введенном сообщении пользователя и вывести соответствующее сообщение.
 </div>
@@ -23,20 +27,14 @@
 <br>
 
 <div class="panel panel-default">
-    <div>
+    <h3>
         Результат
-    </div>
-    <br>
+    </h3>
     <div>
         <div id="container" style="width: 100%">
              <?php
-                 if(!empty($_GET['str'])) {
-                    $namePattern = '/[\s,:?!]+/u';
-                    $wordsArray = preg_split($namePattern, $_GET['str'], -1, PREG_SPLIT_NO_EMPTY);
-                    $wordsArray2 = array_count_values($wordsArray);
-                    arsort($wordsArray2);
-                    echo 'Количество обнаруженных слов: ' . array_sum($wordsArray2);
-                 }
+                $string = $_GET['str'];
+                echo 'Количество обнаруженных слов: ' . mb_substr_count($string, ' ');
              ?>
         </div>
 </body>
