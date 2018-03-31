@@ -105,3 +105,8 @@ a:visited {
 .night {
     display: none;
 }
+
+#top {
+    position: absolute;
+    top: 0;
+}
