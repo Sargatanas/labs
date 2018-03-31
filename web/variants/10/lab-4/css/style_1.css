@@ -1,0 +1,107 @@
+.main {
+    width: 1000px;
+    box-sizing: content-box;
+    overflow: hidden;
+
+    margin: 20px auto;
+    padding: 30px 50px;
+
+    background: linear-gradient(to right, gold 0%, white 30%, white 70%, gold 100%) fixed;
+    box-shadow: -5px 0 20px 0 #ffed00;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 5px 20px;
+
+    border: 1px dotted #ff6609;
+    background: white;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+/* текст */
+.text {
+    text-align: center;
+    text-decoration: overline dotted #ff6609;
+    line-height: 1.5;
+}
+
+
+/* цвет и фон */
+body {
+    background: linear-gradient(to bottom, white 10%, gold 100%) fixed;
+    background-image: url("../img/background_1.png");
+    background-size: cover;
+
+    font-family: "Arial", sans-serif;
+    color: #b85900;
+}
+.hr_1 {
+    border-top: 2px solid goldenrod;
+}
+
+.hr_2 {
+    border: none;
+    border-top: 2px dashed #ff8f00;
+}
+
+
+/* шрифт */
+.paragraph_1 {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    font-style: italic;
+}
+.paragraph_2 {
+    font-family: "Arial Narrow", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* блок */
+pre {
+    padding: 20px 10px 0;
+    background: #ffedce;
+    font-size: 16px;
+}
+.img {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+
+    width: 100px;
+}
+
+/* списки */
+.ul {
+    list-style-image: url("../img/list_1.png");
+}
+.ol {
+    list-style: upper-alpha;
+}
+
+/* псевдоклассы */
+a {
+    color: darkred;
+}
+a:hover {
+    color: orange;
+}
+a:visited {
+    color: #d3af9d;
+}
+
+.day {
+    display: block;
+}
+.night {
+    display: none;
+}

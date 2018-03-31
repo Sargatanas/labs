@@ -8,70 +8,11 @@
           content="На этой странице содержатся данные по арифметике длинных чисел на Pascal">
     <meta name="keywords" content="длинные числа, Pascal">
 
-    <style>
-        body {
-            background: linear-gradient(to bottom, white 10%, gold 100%) fixed;
-            background-image: url("img/background.png");
-            background-size: cover;
-
-            font-family: "Arial", sans-serif;
-            color: #b85900;
-        }
-        .main {
-            width: 1000px;
-            box-sizing: content-box;
-
-            margin: 20px auto;
-            padding: 30px 50px;
-
-            background: linear-gradient(to right, gold 0%, white 30%, white 70%, gold 100%) fixed;
-            box-shadow: -5px 0 20px 0 #ffed00;
-        }
-
-        .hr_1 {
-            border-top: 2px solid goldenrod;
-        }
-        .hr_2 {
-            border: none;
-            border-top: 2px dashed #ff8f00;
-        }
-
-        .paragraph_1 {
-            font-family: "Times New Roman", serif;
-            font-size: 18px;
-            font-style: italic;
-        }
-        .paragraph_2 {
-            font-family: "Arial Narrow", sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .ul {
-            list-style-image: url("img/list.png");
-        }
-        .ol {
-            list-style: upper-alpha;
-        }
-
-        table {
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        td, th {
-            padding: 5px 20px;
-
-            border: 1px dotted #ff6609;
-            background: white;
-
-            text-align: center;
-            vertical-align: middle;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style_2.css">
 </head>
 <body>
     <div class="main">
-        <h1>
+        <h1 id="top">
             ЗАДАЧИ НА ДЛИННУЮ АРИФМЕТИКУ
         </h1>
 
@@ -99,6 +40,10 @@
             </li>
         </ul>
 
+        <p>
+            <u>Примечание</u>: при нажатии на солнышко или луну перейдешь наверх
+        </p>
+
 
         <hr class="hr_1">
 
@@ -106,7 +51,11 @@
             Введение
         </h2>
 
-        <img src="img/img2.png" style="float: left; width: 100px; margin-right: 20px">
+        <a href="#top">
+            <img class="img day" src="img/img2.png">
+            <img class="img night" src="img/img3.png" style="width: 80px;">
+        </a>
+
 
         <p>
             Рассмотрим достаточно популярную в программировании задачу на работу с "длинными" числами. Реально с
@@ -140,7 +89,7 @@
             Основная часть
         </h2>
 
-        <p>
+        <p class="text">
             Наиболее естественным способом представления многозначного числа является запись каждого его разряда в виде
             отдельного элемента линейного массива (или списка, где память под цифру будет отводиться по мере надобности,
             в то время как в массиве приходится заранее задавать максимальное количество элементов в нем). Пусть
@@ -175,7 +124,7 @@
             </li>
         </ol>
 
-        <p>
+        <p class="text">
             Каждую из подзадач реализуем в виде отдельной подпрограммы. Начнем с ввода. Ввести большое число целесообразно
             в виде строки, а в дальнейшем преобразовать в массив цифр. В процедуре учтен указанный выше способ размещения
             "длинного" числа в массиве, т.е. с точки зрения пользователя число записывается как бы в обратном порядке.
@@ -404,7 +353,8 @@
         <h1>
             Посмотри и отдохни!
         </h1>
-        <iframe width="900" height="506" src="https://www.youtube.com/embed/nxD-HnxegTk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="day" width="900" height="506" src="https://www.youtube.com/embed/nxD-HnxegTk" frameborder="0" allowfullscreen></iframe>
+        <iframe class="night" width="900" height="506" src="https://www.youtube.com/embed/CtcvjaOuhNU" frameborder="0" allowfullscreen></iframe>
 
         <h2 id="tasks">
             Задачи для самостоятельного решения
@@ -670,7 +620,9 @@
             </tr>
         </table>
 
-        <img src="img/img1.png" style="width: 900px">
+        <img class="day" src="img/img1.png" style="width: 900px">
+
+        <img class="night" src="img/img4.png" style="width: 900px">
 
         <hr>
 
