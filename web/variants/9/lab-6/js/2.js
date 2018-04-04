@@ -4,11 +4,11 @@ function solution() {
 
     var max = number[0];
     var min = number[0];
-    number = (temp.length === 1) ? "" : number.substring(1);
+    number = (number.length === 1) ? "" : number.substring(1);
 
     while (number !== "") {
         temp = number[0];
-        number = (temp.length === 1) ? "" : number.substring(1);
+        number = (number.length === 1) ? "" : number.substring(1);
 
         max = (Number(temp) > max) ? Number(temp) : max ;
         min = (Number(temp) < min) ? Number(temp) : min ;

@@ -34,7 +34,8 @@
         <div id="container" style="width: 100%">
              <?php
                 $string = $_GET['str'];
-                echo 'Количество обнаруженных слов: ' . mb_substr_count($string, ' ');
+                $string = trim($string);
+                echo 'Количество обнаруженных слов: ' . (mb_substr_count($string, ' ') + 1);
              ?>
         </div>
 </body>
