@@ -36,7 +36,11 @@
                 $string = $_GET['str'];
                 $string = trim($string);
                 $string = str_replace('  ', ' ', $string);
-                echo 'Количество обнаруженных слов: ' . (mb_substr_count($string, ' ') + 1);
+                if (empty($string)) {
+                    echo 'Количество обнаруженных слов: 0';
+                } else {
+                    echo 'Количество обнаруженных слов: ' . (mb_substr_count($string, ' ') + 1);
+                }
              ?>
         </div>
 </body>
