@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+    <link rel="stylesheet" href="../css/2.css">
+</head>
+<body>
+
+<div>
+    <div>
+        2. Даны натуральные числа <i>n</i>, <i>k</i>. Проверить, есть ли в записи
+        числа <i>n<sup>k</sup></i> цифра <i>m</i>.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="solution(); return false;">
+            <label for="n">
+                Число <i>n</i>:
+            </label>
+            <input type="number" min="1" id="n" name="n" required>
+            <br><br>
+            <label for="k">
+                Число <i>k</i>:
+            </label>
+            <input type="number" min="1" id="k" name="k" required>
+            <br><br>
+            <label for="m">
+                Число <i>m</i> (от 0 до 9):
+            </label>
+            <input type="number" min="0" max="9" id="m" name="m" required>
+            <br><br>
+            <input type="submit" value="Проверить">
+        </form>
+        <br>
+        <div>
+            Ответ: <span id="result">#</span>
+        </div>
+    </div>
+</div>
+
+<script src="../js/2.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 5</title>
+    <link rel="stylesheet" href="../css/5.css">
+</head>
+<body>
+
+<div>
+    <div>
+        5. Написать функцию, которая открыла бы окно с зеленым фоном и приветствием:
+        "Привет, имя пользователя, вот твое окно!" Имя пользователя можно узнать с помощью запроса.
+        Создать ссылку, которая закроет окно.
+    </div>
+    <br><hr><br>
+    <form method="get" onsubmit="solution(); return false;">
+        <label for="name">
+            Ваше имя:
+        </label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <input type="submit" value="Открыть окно">
+    </form>
+    <div class="window" id="window">
+        <div class="window__header">Окно пользователя</div>
+        <div class="window__content">Привет, <span id="user_name">#</span>, вот твое окно!</div>
+        <button class="window__button" id="close">
+            Закрыть окно
+        </button>
+    </div>
+</div>
+
+<script src="../js/5.js"></script>
+</body>
+</html>
