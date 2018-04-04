@@ -35,7 +35,7 @@
              <?php
                 $string = $_GET['str'];
                 $string = trim($string);
-                $string = str_replace('  ', ' ', $string);
+                $string = preg_replace('/\s{2,}/', ' ', $string);
                 if (empty($string)) {
                     echo 'Количество обнаруженных слов: 0';
                 } else {
