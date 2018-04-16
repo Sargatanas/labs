@@ -1,0 +1,13 @@
+.status {
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+    height: 40px;
+    box-sizing: border-box;
+
+    margin-top: 30px;
+    padding-left: 10px;
+
+    background: lightgray;
+}

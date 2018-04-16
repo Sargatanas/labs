@@ -1,0 +1,18 @@
+.button {
+    width: 400px;
+    height: 40px;
+
+    background: #7977da;
+    border: none;
+
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #9795ff;
+}

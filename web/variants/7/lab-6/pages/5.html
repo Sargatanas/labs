@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 5</title>
+    <link rel="stylesheet" href="../css/5.css">
+</head>
+<body>
+
+<div>
+    <div>
+        7. Создать форму, которая будет взаимодействовать с пользователем.
+        <br><br>
+        Форма должна иметь три элемента
+        <ul>
+            <li>
+                поле ввода с просьбой ввести имя;
+            </li>
+            <li>
+                два поля для флажков с вопросом о том, что больше нравится пользователю, мороженое или шоколад;
+            </li>
+            <li>
+                кнопку отправки данных.
+            </li>
+        </ul>
+        С каждым элементом должно произойти следующее:
+        <br>
+        <ul>
+            <li>
+                При вводе имени в строке состояния должны появиться слова: "Впишите сюда свое имя".
+            </li>
+            <li>
+                Два поля с флажками должны отослать в строку состояния слова: "Вы выбрали..." и выбор пользователя.
+            </li>
+            <li>
+                При нажатии на кнопку должно выскочить окно предупреждения, благодарящее пользователя за участие
+                в опросе.
+            </li>
+        </ul>
+    </div>
+    <br><hr><br>
+    <div>
+        <form onsubmit="thanks(); return false;">
+            <label for="name">
+                Имя пользователя:
+            </label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <div>
+                Что вам больше нравится?
+            </div>
+            <br>
+            <input type="radio" id="radio-1" name="radio" value="мороженое">
+            <label for="radio-1">
+                мороженое
+            </label>
+            <br>
+            <input type="radio" id="radio-2" name="radio" value="шоколад">
+            <label for="radio-2">
+                шоколад
+            </label>
+            <br><br>
+
+            <input type="submit" value="Отправить">
+        </form>
+
+        <div class="status" id="status"></div>
+    </div>
+</div>
+
+<script src="../js/5.js"></script>
+</body>
+</html>

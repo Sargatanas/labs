@@ -24,6 +24,9 @@
         <a class="main-variants__element" href="/variants/6/index.html">
             Вариант 6
         </a>
+        <a class="main-variants__element" href="/variants/7/index.html">
+            Вариант 7
+        </a>
         <a class="main-variants__element" href="/variants/8/index.html">
             Вариант 8
         </a>

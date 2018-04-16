@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 2</title>
+</head>
+<body>
+
+<div>
+    <div>
+        7. Среди всех <i>n</i>-значных чисел указать те, сумма цифр которых равна данному числу <i>k</i>.
+    </div>
+    <br><hr><br>
+    <div>
+        <form method="get" onsubmit="poisk(); return false;">
+            <label for="n">
+                <i>n</i>:
+            </label>
+            <input type="number" min="1" id="n" name="n" required>
+            <br><br>
+            <label for="k">
+                <i>k</i>:
+            </label>
+            <input type="number" min="1" id="k" name="k" required>
+            <br><br>
+            <input type="submit" value="Проверить">
+        </form>
+        <br>
+        <div>
+            <div>
+                Числа:
+            </div>
+            <div id="numbers">
+                #
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/2.js"></script>
+</body>
+</html>

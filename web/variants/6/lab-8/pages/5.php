@@ -43,7 +43,7 @@ $name_of_file = date('j-m-y_G-i-s');
 $name = $_GET['name'];
 $message = $_GET['message'];
 if (!empty($name) && !empty($message)) {
-    $file = fopen("resources/{$name_of_file}.txt", 'w');
+    $file = fopen("resources/{$name_of_file}.txt", 'w+');
     $test = fwrite($file, "User name:\r\n".$name."\r\n\r\n"."Message:\r\n".$message);
     if ($test) {
         echo 'Данные в файл успешно занесены.<br><br>';

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 6</title>
+</head>
+<body>
+
+<div>
+    <div>
+        Добавить к калькулятору следующие возможности:
+        <br><br>
+        7. Вычисление остатка от деления.
+    </div>
+    <br><hr><br>
+    <div>
+        <form id="calc">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="monitor">
+                    </td>
+                    <td>
+                        <input type="button" id="fault" value="ON/C" onClick="plug()">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b7" value="7" disabled onclick="digit(7)"></td>
+                    <td><input type="button" id="b8" value="8" disabled onclick="digit(8)"></td>
+                    <td><input type="button" id="b9" value="9" disabled onclick="digit(9)"></td>
+                    <td><input type="button" id="div" value="/" disabled onclick="expr(1)"></td>
+                    <td><input type="button" id="off" value="OFF" disabled onclick="shut()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b4" value="4" disabled onclick="digit(4)"></td>
+                    <td><input type="button" id="b5" value="5" disabled onclick="digit(5)"></td>
+                    <td><input type="button" id="b6" value="6" disabled onclick="digit(6)"></td>
+                    <td><input type="button" id="mult" value="*" disabled onclick="expr(2)"></td>
+                    <td><input type="button" id="sqr" value="^2" disabled onclick="square(1)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b1" value="1" disabled onclick="digit(1)"></td>
+                    <td><input type="button" id="b2" value="2" disabled onclick="digit(2)"></td>
+                    <td><input type="button" id="b3" value="3" disabled onclick="digit(3)"></td>
+                    <td><input type="button" id="subt" value="-" disabled onclick="expr(3)"></td>
+                    <td><input type="button" id="sqrt" value="&#8730;" disabled onclick="square(0)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="b0" value="0" disabled onclick="digit(0)"></td>
+                    <td><input type="button" id="fix" value="." disabled onclick="digit('.')"></td>
+                    <td><input type="button" id="ost" value="%" disabled onclick="expr(5)"></td>
+                    <td><input type="button" id="add" value="+" disabled onclick="expr(4)"></td>
+                    <td><input type="button" id="res" value="=" disabled onclick="result()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<script src="../js/6.js"></script>
+</body>
+</html>
