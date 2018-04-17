@@ -75,7 +75,11 @@ function result() {
         case 2 : R = num1 * num2; break;
         case 3 : R = num1 - num2; break;
         case 4 : R = num1 * c + num2 * c; break;
-        case 5: R = num1 % num2; break;
+        case 5: R = num1 % num2;
+                if (R < 0){
+                    R += Number(num2);
+                }
+                break;
     }
     document.getElementById("monitor").value = R;
 }

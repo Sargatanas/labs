@@ -20,8 +20,6 @@
 }
 
 body {
-    overflow-y: scroll;
-
     margin: 0;
     padding: 0;
 
@@ -70,7 +68,7 @@ body {
     width: 300px;
     height: 300px;
 
-    margin: 30px 0 20px;
+    margin: 20px 0 20px;
 
     background: url("/resources/img/logo.png") no-repeat 50% 50%;
     background-size: contain;
@@ -97,6 +95,10 @@ body {
     margin-left: 10px;
     margin-bottom: 20px;
 }
+.main-variants_mini {
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
 
 .main-variants__element {
     display: flex;
@@ -125,9 +127,16 @@ body {
 }
 .main-variants__element:active {
     margin-top: 3px;
-    margin-left: 3px;
     margin-bottom: 17px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15);
+}
+
+.main-variants__element_mini {
+    flex-grow: 1;
+    flex-basis: 45%;
+    max-width: 100%;
+    width: auto;
+    margin-right: 15px;
 }
 
 .main-variants__element_default {
